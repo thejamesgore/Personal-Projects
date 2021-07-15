@@ -22,3 +22,5 @@ function breathAnimation() {
 }
 
 setInterval(breathAnimation, totalTime);
+
+//update
