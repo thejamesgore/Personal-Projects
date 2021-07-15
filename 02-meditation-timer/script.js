@@ -2,8 +2,8 @@ const container = document.getElementById('container');
 const text = document.getElementById('text');
 
 const totalTime = 14000;
-const breatheTime = (totalTime / 5) * 2;
-const holdTime = totalTime / 5;
+const breatheTime = 4000;
+const holdTime = 3000;
 
 breathAnimation();
 
