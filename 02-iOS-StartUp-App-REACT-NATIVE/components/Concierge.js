@@ -32,14 +32,14 @@ const Concierge = () => {
                         style={{
                             width: 100, 
                             height: 50, 
-                            resizeMode: 'strech',
+                            resizeMode: 'contain',
                         }}
                         source={{
                             uri: item.image
                         }}
                         />
 
-                        <Text style={tw`mt-2 text-lg font-semibold `}>{item.title}</Text>
+                        <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
 
 
                 </TouchableOpacity>

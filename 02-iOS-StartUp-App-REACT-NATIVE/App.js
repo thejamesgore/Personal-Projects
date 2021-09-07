@@ -9,7 +9,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import HomeScreen from './screens/HomeScreen'
-import MapScreen2 from './screens/MapScreen2'
+import LuxRentals from './screens/LuxRentals'
 import FlyScreen from './screens/FlyScreen'
 import ChauffeurScreen from './screens/ChauffeurScreen'
 
@@ -31,8 +31,8 @@ const Stack = createStackNavigator()
         />
 
         <Stack.Screen 
-          name="MapScreen2"
-          component={MapScreen2}
+          name="LuxRentals"
+          component={LuxRentals}
           options={{
             headerShown: false,
           }}

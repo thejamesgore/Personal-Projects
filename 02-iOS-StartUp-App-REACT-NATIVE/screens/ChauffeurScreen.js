@@ -1,11 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import tw from 'tailwind-react-native-classnames'
+import Map from '../components/Map'
 
 const ChauffeurScreen = () => {
     return (
-        <View>
-            <Text>This is the Chauffeur screen</Text>
-        </View>
+       
+        <View style={tw`h-1/2 `}>
+        <Map />
+    </View>
     )
 }
 
