@@ -9,7 +9,7 @@ const data = [
         id: "123",
         title: "Lux Rentals",
         image: "https://user-images.githubusercontent.com/83005220/132331888-db68c76a-5d6d-4c8a-b979-44508bd6eed1.png",
-        screen: "MapScreen2",
+        screen: "LuxRentals",
     },
     {
         id: "456",
