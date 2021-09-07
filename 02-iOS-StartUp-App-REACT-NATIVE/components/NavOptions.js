@@ -7,13 +7,13 @@ import { useNavigation } from '@react-navigation/core'
 const data = [
     {
         id: "123",
-        title: "Ride In Style",
+        title: "Lux Rentals",
         image: "https://user-images.githubusercontent.com/83005220/132331888-db68c76a-5d6d-4c8a-b979-44508bd6eed1.png",
         screen: "MapScreen2",
     },
     {
         id: "456",
-        title: "Fly In Style",
+        title: "Fly Private",
         image: "https://user-images.githubusercontent.com/83005220/132332553-85d2470d-b278-4ea6-be4c-30a545f8a88a.png",
         screen: "FlyScreen",
     },

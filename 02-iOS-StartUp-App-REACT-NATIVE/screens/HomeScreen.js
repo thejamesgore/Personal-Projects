@@ -6,6 +6,7 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import { GOOLE_MAPS_APIKEY } from "@env"
 import { setDestination, setOrigin } from '../slices/navSlice'
 import { useDispatch } from 'react-redux'
+import Concierge from '../components/Concierge'
 
 
 
@@ -55,7 +56,7 @@ const HomeScreen = () => {
     debounce={400}
     placeholder="Where to?"
 />
-
+    <Concierge />
                 <NavOptions />
             </View>
         </SafeAreaView>
