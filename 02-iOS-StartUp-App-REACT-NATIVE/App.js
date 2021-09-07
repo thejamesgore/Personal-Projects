@@ -9,7 +9,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import HomeScreen from './screens/HomeScreen'
-import MapScreen from './screens/MapScreen'
+import MapScreen2 from './screens/MapScreen2'
 import FlyScreen from './screens/FlyScreen'
 
 export default function App() {
@@ -30,8 +30,8 @@ const Stack = createStackNavigator()
         />
 
         <Stack.Screen 
-          name="MapScreen"
-          component={MapScreen}
+          name="MapScreen2"
+          component={MapScreen2}
           options={{
             headerShown: false,
           }}
@@ -46,7 +46,7 @@ const Stack = createStackNavigator()
         />
 
       </Stack.Navigator>
-        {/* <HomeScreen/> */}
+
       </SafeAreaProvider>
       </NavigationContainer>
     </Provider>
