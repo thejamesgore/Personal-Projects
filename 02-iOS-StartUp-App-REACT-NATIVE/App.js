@@ -11,6 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import HomeScreen from './screens/HomeScreen'
 import MapScreen2 from './screens/MapScreen2'
 import FlyScreen from './screens/FlyScreen'
+import ChauffeurScreen from './screens/ChauffeurScreen'
 
 export default function App() {
 
@@ -40,6 +41,14 @@ const Stack = createStackNavigator()
         <Stack.Screen 
           name="FlyScreen"
           component={FlyScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+
+        <Stack.Screen 
+          name="ChauffeurScreen"
+          component={ChauffeurScreen}
           options={{
             headerShown: false,
           }}
