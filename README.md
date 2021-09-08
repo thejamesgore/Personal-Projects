@@ -1,6 +1,6 @@
 # Personal Projects
 
-These are the prersonal projects I've developed in my freetime to expore different technologies that have taken my interest with the objective of solidifying my existing knowledge and understanding of what I've learned so far but also stretch and develop further.
+These are the prersonal projects I've developed in my freetime to expore different technologies that have taken my interest with the objective of solidifying my existing knowledge and understanding of what I've learned so far, but to also stretch and develop further.
 
 There are README.md files in each project folder
 ## Projects
