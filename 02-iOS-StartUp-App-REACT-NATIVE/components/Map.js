@@ -24,7 +24,8 @@ const Map = () => {
     <MapView
       ref={mapRef}
       style={tw`flex-1`}
-      provider="google"
+      // provider="google"
+
       initialRegion={{
         latitude: destination.location.lat,
         longitude: destination.location.lng,
