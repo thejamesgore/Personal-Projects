@@ -8,6 +8,7 @@ Stretch my knowledge of React & calling Apis to React-Native
 react-native
 react-native-elements
 react-native-maps
+react-native-maps-directions
 react-navigation
 react-redux
 google-autocomplete-api

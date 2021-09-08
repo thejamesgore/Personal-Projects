@@ -13,11 +13,11 @@ const NavigateCard = () => {
   const navigation = useNavigation()
 
   return (
-    <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center pt-5 text-sm`}>
+    <SafeAreaView style={tw`bg-black flex-1`}>
+      <Text style={tw`text-center pt-5 text-sm text-white`}>
         We couldn't find your current location.
       </Text>
-      <Text style={tw`text-center pb-5 text-sm`}>Please enter below.</Text>
+      <Text style={tw`text-center pb-5 text-sm text-white`}>Please enter below.</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
           <GooglePlacesAutocomplete
@@ -53,12 +53,12 @@ export default NavigateCard;
 
 const toInputBoxStyles = StyleSheet.create({
   container: {
-    backgroundColor: "white",
+    backgroundColor: "black",
     paddingTop: 20,
     flex: 0,
   },
   textInput: {
-    backgroundColor: "#DDDDDF",
+    backgroundColor: "white",
     borderRadius: 0,
     fontSize: 18,
   },
