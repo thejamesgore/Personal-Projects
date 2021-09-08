@@ -56,7 +56,9 @@ const HomeScreen = () => {
     debounce={400}
     placeholder="Where to?"
 />
-            <Concierge />
+            <Concierge
+            
+            />
             <NavOptions />
             </View>
         </SafeAreaView>
