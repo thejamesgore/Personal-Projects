@@ -3,30 +3,30 @@ import { StyleSheet, Text, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import { useSelector } from "react-redux";
 import tw from "tailwind-react-native-classnames";
-import { selectOrigin } from "../slices/navSlice";
+import { selectDestination } from "../slices/navSlice";
 
 const Map = () => {
-  const origin = useSelector(selectOrigin);
+  const destination = useSelector(selectDestination);
 
   return (
     <MapView
       style={tw`flex-1`}
       provider="google"
       initialRegion={{
-        latitude: origin.location.lat,
-        longitude: origin.location.lng,
+        latitude: destination.location.lat,
+        longitude: destination.location.lng,
         latitudeDelta: 0.01,
         longitudeDelta: 0.01,
       }}
     >
-      {origin?.location && (
+      {destination?.location && (
         <Marker
           coordinate={{
-            latitude: origin.location.lat,
-            longitude: origin.location.lng,
+            latitude: destination.location.lat,
+            longitude: destination.location.lng,
           }}
-          identifier="origin"
-          description={origin.description}
+          identifier="origin(Should be destination, change later)"
+          description={destination.description}
         />
       )}
     </MapView>
