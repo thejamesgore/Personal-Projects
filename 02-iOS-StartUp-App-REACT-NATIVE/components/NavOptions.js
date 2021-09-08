@@ -47,13 +47,6 @@ const navigation = useNavigation()
 
                         <Text style={tw`mt-2 text-lg font-semibold `}>{item.title}</Text>
 
-                        <Icon 
-                            type='antdesign'
-                            color='white'
-                            name='arrowright'
-                            style={tw`p-2 bg-black rounded-full w-10 mt-4`}
-                        />
-
                 </TouchableOpacity>
             )}
         />
