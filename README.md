@@ -17,6 +17,8 @@ As I've not been taught react-native but learned react for my second ga-project 
 Has been a great learning experience so far and I have lots more to add progressively overtime.
 
 ### bin
-Where projects go to die. I've liked built and trashed 5-10 side projects so far I created while working on larger ones to isolate and understand functinality better. All of those make it to the bin as they're incomplete and some of those get trashed and lost forever.
+Where projects go to die. I've likely built and trashed 5-10 side projects so far that I created while working on larger ones to isolate and understand functinality/concepts better. They can be considered as testing environments however some have potential to be interesting full blown projects themselves. 
 
-The intent is to eventually turn some of those fully functional and something I can be proud to share alongside the main projects in this folder
+All of those that make it to the bin do so as they're incomplete/for testing - and of those that do, some get trashed and lost forever.
+
+The intent is to eventually flesh out these projects as my skills develop over time.
