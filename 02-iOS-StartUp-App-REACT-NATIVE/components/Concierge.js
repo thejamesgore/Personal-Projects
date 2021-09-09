@@ -49,7 +49,7 @@ const Concierge = () => {
             }}
           />
 
-          <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
+          <Text style={tw`${destination && "mt-2 text-lg font-semibold text-black"} ${!destination && "text-white"}`}>{item.title}</Text>
         </TouchableOpacity>
       )}
       />

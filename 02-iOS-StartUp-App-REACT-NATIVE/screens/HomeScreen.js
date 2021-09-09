@@ -7,16 +7,26 @@ import { GOOGLE_MAPS_APIKEY } from "@env"
 import { setDestination, setOrigin } from '../slices/navSlice'
 import { useDispatch } from 'react-redux'
 import Concierge from '../components/Concierge'
-
-
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import { Icon } from 'react-native-elements'
+import { useNavigation } from '@react-navigation/core'
 
 const HomeScreen = () => {
     const dispatch = useDispatch()
+    const navigation = useNavigation()
 
     return (
         <SafeAreaView style={tw`bg-black h-full`}>
+            <TouchableOpacity 
+            style={tw`bg-gray-100 rounded-full absolute z-50 left-8 p-2 shadow-lg top-12`}
+            onPress={() => navigation.navigate("AccountsScreen")}
+            >
+                    <Icon name="menu" />
+                </TouchableOpacity>
             <View style={tw`p-5`}>
                 <View style={styles.logoContainer}>
+                 
+                
                 <Image
                         style={{
                             width: 100, 
@@ -25,7 +35,8 @@ const HomeScreen = () => {
                         }}
                         source={require('../assets/logo.png')}
                 />
-                </View>
+                 </View>
+                
 <GooglePlacesAutocomplete 
     nearbyPlacesAPI="GooglePlacesSearch"
     styles={{
@@ -68,6 +79,6 @@ export default HomeScreen
 const styles = StyleSheet.create({
     logoContainer: {
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 })

@@ -14,10 +14,10 @@ import { useNavigation } from "@react-navigation/core";
 import { useSelector } from "react-redux";
 import { selectTravelTimeInformation } from "../slices/navSlice";
 
-const ChauffeurChoice = () => {
+const ChauffeurSelection = () => {
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
-  const setTravelTimeInformation = useSelector(selectTravelTimeInformation);
+
 
   const drivers = [
     {
@@ -26,7 +26,7 @@ const ChauffeurChoice = () => {
       multiplier: 1,
       image:
         "https://user-images.githubusercontent.com/83005220/132680184-9dd467cd-0a6f-4926-b61c-545014e3dd45.png",
-      rating: 4.7,
+      rating: 4.6,
     },
     {
       id: "Driver2",
@@ -42,7 +42,7 @@ const ChauffeurChoice = () => {
       multiplier: 1.3,
       image:
         "https://user-images.githubusercontent.com/83005220/132681604-23e6888b-4cf4-4b45-a921-b33b5228ebf0.png",
-        rating: 4.6,
+        rating: 4.7,
     },
   ];
 
@@ -75,7 +75,6 @@ const ChauffeurChoice = () => {
                 width: 100,
                 height: 80,
                 resizeMode: "contain",
-                padding: "10px",
               }}
               source={{ uri: image }}
             />
@@ -119,6 +118,6 @@ const ChauffeurChoice = () => {
   );
 };
 
-export default ChauffeurChoice;
+export default ChauffeurSelection;
 
 const styles = StyleSheet.create({});
