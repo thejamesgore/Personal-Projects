@@ -12,6 +12,7 @@ react-native-maps-directions
 react-navigation
 react-redux
 google-autocomplete-api
+google-places-api
 google-distance-matrix-api
 ## How To Demo
 
@@ -38,3 +39,6 @@ Homescreen where the user can:
 -   Book a table for dinner (Skip the queue)
 -   Book event tickets
 -   Assistant / Live chat
+
+## Learning Points From This Project
+Usefulness of optional chaining when debugging errors

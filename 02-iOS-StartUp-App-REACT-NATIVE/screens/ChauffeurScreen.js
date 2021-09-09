@@ -5,7 +5,7 @@ import tw from "tailwind-react-native-classnames";
 import Map from "../components/Map";
 import NavigateCard from "../components/NavigateCard";
 import CarChoice from "../components/CarChoice";
-import ChauffeurChoice from "../components/ChauffeurChoice";
+import ChauffeurSelection from "../components/ChauffeurSelection";
 
 const ChauffeurScreen = () => {
   const Stack = createStackNavigator();
@@ -26,8 +26,8 @@ const ChauffeurScreen = () => {
             }}
           />
           <Stack.Screen
-            name="ChauffeurChoice"
-            component={ChauffeurChoice}
+            name="ChauffeurSelection"
+            component={ChauffeurSelection}
             options={{
               headerShown: false,
             }}

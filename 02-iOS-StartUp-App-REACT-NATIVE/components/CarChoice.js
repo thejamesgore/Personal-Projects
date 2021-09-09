@@ -37,7 +37,7 @@ const CarChoice = () => {
     <SafeAreaView style={tw`bg-black flex-grow`}>
       <View>
         <TouchableOpacity
-          onPress={() => navigation.navigate("ChauffeurChoice")}
+          onPress={() => navigation.navigate("ChauffeurSelection")}
           style={[tw`absolute top-4 left-5 z-50 p-1 bg-white rounded-full`]}
         >
           <Icon name="chevron-left" type="fontawesome" />

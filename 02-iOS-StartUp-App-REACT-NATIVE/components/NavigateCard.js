@@ -55,7 +55,7 @@ const NavigateCard = () => {
                   description: data.description,
                 })
               );
-              navigation.navigate("ChauffeurChoice");
+              navigation.navigate("ChauffeurSelection");
             }}
             query={{
               key: GOOGLE_MAPS_APIKEY,
