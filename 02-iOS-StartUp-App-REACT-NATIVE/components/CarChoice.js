@@ -7,17 +7,12 @@ import { useSelector } from "react-redux"
 import { selectTravelTimeInformation } from "../slices/navSlice"
 
 
-
-
-
-
-
-const ChauffeurOptionsCard = () => {
+const CarChoice = () => {
     const navigation = useNavigation()
     const [selected, setSelected] = useState(null)
     const setTravelTimeInformation = useSelector(selectTravelTimeInformation)
 
-    const data = [
+    const cars = [
         {
           id: "Rolls",
           title: "Rolls Royce Phantom",
@@ -42,7 +37,7 @@ const ChauffeurOptionsCard = () => {
     <SafeAreaView style={tw`bg-black flex-grow`}>
       <View>
         <TouchableOpacity
-          onPress={() => navigation.navigate("NavigateCard")}
+          onPress={() => navigation.navigate("ChauffeurChoice")}
           style={[tw`absolute top-4 left-5 z-50 p-1 bg-white rounded-full`]}
         >
           <Icon name="chevron-left" type="fontawesome" />
@@ -54,7 +49,7 @@ const ChauffeurOptionsCard = () => {
       </View>
 
     <FlatList 
-        data={data}
+        data={cars}
         keyExtractor={(item) => item.id}
         renderItem={({ item: { id, title, multiplier, image}, item }) => (
             <TouchableOpacity
@@ -101,6 +96,6 @@ const ChauffeurOptionsCard = () => {
   );
 };
 
-export default ChauffeurOptionsCard;
+export default CarChoice;
 
 const styles = StyleSheet.create({});
