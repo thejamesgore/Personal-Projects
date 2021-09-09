@@ -16,7 +16,16 @@ google-places-api
 google-distance-matrix-api
 ## How To Demo
 
-There are some base requirements needed to demo this build. This was built for iOS so some styling does not work properly on android due to differences in the repspective opereating systems however the issues are purely cosmetic and if you wish to test the app using android or android emulator you can too.
+There are some base requirements needed to demo this build. This was built for iOS so some styling does not work properly on android due to differences in the repspective opereating systems however the issues are purely cosmetic except for one and if you wish to test the app using android or android emulator you can too.
+
+### Getting your Google Dev API keys
+
+1. Navigate to https://console.cloud.google.com/ and sign in with your Google account, agree to the terms, and follow the first basic isnstructions
+2. Click Select a project, then new project, follow the set up instructions, and select your project from the dropdown menu
+3. Click APIs & Services, library, then in search bar enter the google APIs used for this project and add them
+4. Click on the Credentials tab then click create credentials. Follow the instructions and your api key will be generated
+5. In the app root folder create a .env file and on the first line enter GOOGLE_MAPS_APIKEY= followed by your generated API key without spaces or quotations
+### Running the app
 
 1. Install the required packages using `yarn` in the app root folder
 2. If not already installed, install expo using `yarn add expo`
@@ -39,6 +48,10 @@ Homescreen where the user can:
 -   Book a table for dinner (Skip the queue)
 -   Book event tickets
 -   Assistant / Live chat
+
+## Milestones
+Base functionality reached as demonstrated by the video below which if you click takes you to a YouTube high res version
+[![Base App](https://user-images.githubusercontent.com/83005220/132729102-12c47c32-4796-46ca-b52e-0a9d7e90bce1.gif)](https://www.youtube.com/watch?v=0XkzknANB_U "Base App")
 
 ## Learning Points From This Project
 Usefulness of optional chaining when debugging errors
