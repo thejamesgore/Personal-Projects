@@ -12,6 +12,8 @@ react-native-maps-directions
 react-navigation
 react-redux
 google-autocomplete-api
+google-distance-matrix-api
+
 
 ## How To Demo
 
