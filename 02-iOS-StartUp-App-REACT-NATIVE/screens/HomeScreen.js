@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames'
 import NavOptions from '../components/NavOptions'
+import TableService from '../components/TableService'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 import { GOOGLE_MAPS_APIKEY } from "@env"
 import { setDestination, setOrigin } from '../slices/navSlice'
@@ -69,6 +70,7 @@ const HomeScreen = () => {
 />
             <Concierge />
             <NavOptions />
+            <TableService />
             </View>
         </SafeAreaView>
     )

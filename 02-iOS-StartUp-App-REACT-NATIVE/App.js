@@ -13,6 +13,7 @@ import LuxRentals from "./screens/LuxRentals";
 import FlyScreen from "./screens/FlyScreen";
 import ChauffeurScreen from "./screens/ChauffeurScreen";
 import AccountsScreen from "./screens/AccountsScreen";
+import BookingScreen from "./screens/BookingScreen"
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -57,6 +58,13 @@ export default function App() {
             <Stack.Screen
               name="ChauffeurScreen"
               component={ChauffeurScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name="BookingScreen"
+              component={BookingScreen}
               options={{
                 headerShown: false,
               }}
