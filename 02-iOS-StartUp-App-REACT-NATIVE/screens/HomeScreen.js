@@ -11,6 +11,8 @@ import Concierge from '../components/Concierge'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import { Icon } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/core'
+import { Divider } from 'react-native-elements'
+import BottomTab from '../components/BottomTab'
 
 const HomeScreen = () => {
     const dispatch = useDispatch()
@@ -18,12 +20,6 @@ const HomeScreen = () => {
 
     return (
         <SafeAreaView style={tw`bg-black h-full`}>
-            <TouchableOpacity 
-            style={tw`bg-gray-100 rounded-full absolute z-50 left-8 p-2 shadow-lg top-12`}
-            onPress={() => navigation.navigate("AccountsScreen")}
-            >
-                    <Icon name="menu" />
-                </TouchableOpacity>
             <View style={tw`p-5`}>
                 <View style={styles.logoContainer}>
                  
@@ -72,6 +68,7 @@ const HomeScreen = () => {
             <NavOptions />
             <TableService />
             </View>
+            <BottomTab />
         </SafeAreaView>
     )
 }
