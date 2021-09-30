@@ -34,5 +34,7 @@ Experimenting implementing smart contracts on the ethereum blockchain
 
 ### 02-iOS-Yelp-API-REACT-NATIVE
 
-iOS app testbox that that calls the Yelp API and produces results of restaurants on the front page using that data. Want to integrate this into a screen of another app. Also experimented with different ways to style the main page using react-naitive-vector-icons
+iOS app testbox that that calls the Yelp API and produces results of restaurants on the front page using that data. Want to integrate this into a screen of another app. Also experimented with different ways to style the main page using react-naitive-vector-icons.
+
+The yelp api is only returning data for US locations. Can return data based on longditude and latitude but beyond scope of testbox and it's currently functional
 
