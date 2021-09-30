@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
 import {
   SafeAreaView,
   ScrollView,
@@ -8,7 +9,10 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native'
+import { YELP_API_KEY } from '@env'
+import { selectDestination } from '../slices/navSlice'
 
+// model data used to see if will map over screen successfully in same format as response from yelp API
 export const localRestaurants = [
   {
     name: 'Beachside Bar',
@@ -40,11 +44,33 @@ export const localRestaurants = [
 ]
 
 const BookingScreen = () => {
+  const [restaurantData, setRestaurantData] = useState([])
+  const destination = useSelector(selectDestination)
+
+  const getRestaurants = () => {
+    const YELP_ENDPOINT = `https://api.yelp.com/v3/businesses/search?term=restaurants&latitude=${destination.location.lat}&longitude=${destination.location.lng}`
+
+    const options = {
+      headers: {
+        Authorization: `Bearer ${YELP_API_KEY}`,
+      },
+    }
+
+    return fetch(YELP_ENDPOINT, options)
+      .then((res) => res.json())
+      .then(console.log())
+      .then((json) => setRestaurantData(json.businesses))
+  }
+
+  useEffect(() => {
+    getRestaurants()
+  }, [])
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView style={{ backgroundColor: 'black', padding: 15 }}>
-        {localRestaurants.map((restaurant, index) => (
-          <TouchableOpacity style={{ paddingBottom: 10 }}>
+        {restaurantData.map((restaurant, index) => (
+          <TouchableOpacity key={index} style={{ paddingBottom: 10 }}>
             <RestaurantImage image={restaurant.image_url} />
             <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
           </TouchableOpacity>
