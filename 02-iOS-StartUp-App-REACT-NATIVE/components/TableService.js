@@ -28,7 +28,7 @@ const TableService = () => {
   const destination = useSelector(selectDestination)
 
   return (
-    <View>
+    <View style={tw`${!destination && 'opacity-20'}`}>
       <FlatList
         data={data}
         keyExtractor={(item) => item.id}
