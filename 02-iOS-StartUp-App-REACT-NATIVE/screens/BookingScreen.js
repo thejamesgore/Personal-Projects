@@ -68,11 +68,11 @@ const BookingScreen = () => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <ScrollView style={{ backgroundColor: 'black', padding: 15 }}>
+      <ScrollView style={{ backgroundColor: 'black', padding: 15,}}>
         {restaurantData.map((restaurant, index) => (
-          <TouchableOpacity key={index} style={{ paddingBottom: 10 }}>
+          <TouchableOpacity key={index} style={{ paddingBottom: 30 }}>
             <RestaurantImage image={restaurant.image_url} />
-            <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
+            <RestaurantInfo name={restaurant.name} location={restaurant.location.address1} rating={restaurant.rating} />
           </TouchableOpacity>
         ))}
       </ScrollView>
@@ -102,10 +102,10 @@ const RestaurantInfo = (props) => (
       <Text style={{ fontSize: 15, fontWeight: 'bold', color: 'white' }}>
         {props.name}
       </Text>
-      <Text style={{ fontSize: 13, color: 'grey' }}>30-45 • min</Text>
+      <Text style={{ fontSize: 13, color: 'grey' }}>{props.location}</Text>
     </View>
     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-      <Text style={{ color: 'white', paddingRight: 5 }}>Rating:</Text>
+      <Text style={{ color: 'white', paddingRight: 5 }}>Rating: </Text>
       <View
         style={{
           backgroundColor: '#eee',
