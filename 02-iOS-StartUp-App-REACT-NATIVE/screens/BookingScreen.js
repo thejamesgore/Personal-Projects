@@ -105,7 +105,7 @@ const RestaurantInfo = (props) => (
       <Text style={{ fontSize: 13, color: 'grey' }}>{props.location}</Text>
     </View>
     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-      <Text style={{ color: 'white', paddingRight: 5 }}>Rating:</Text>
+      <Text style={{ color: 'white', paddingRight: 5 }}>Rating: </Text>
       <View
         style={{
           backgroundColor: '#eee',
