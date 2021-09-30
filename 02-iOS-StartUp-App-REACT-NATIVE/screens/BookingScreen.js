@@ -31,7 +31,7 @@ export const localRestaurants = [
   {
     name: 'Wagamama',
     image_url:
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1874173.jpg&f=1&nofb=1',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FFuaWRnINcF_S4J_lOvbZFzvAE10%3D%2F0x0%3A2000x1333%2F1200x0%2Ffilters%3Afocal(0x0%3A2000x1333)%3Ano_upscale()%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F7482771%2F30710240330_bc1c0d2fce_o__1_.jpg&f=1&nofb=1',
     categories: ['Indian', 'Bar'],
     price: '$$',
     reviews: 700,
@@ -41,10 +41,14 @@ export const localRestaurants = [
 
 const BookingScreen = () => {
   return (
-    <SafeAreaView style={{ flex: 1,  }}>
-      <ScrollView style={{backgroundColor: "black", padding:15}}>
-        <RestaurantImage />
-        <RestaurantInfo />
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView style={{ backgroundColor: 'black', padding: 15 }}>
+        {localRestaurants.map((restaurant, index) => (
+          <TouchableOpacity style={{ paddingBottom: 10 }}>
+            <RestaurantImage image={restaurant.image_url} />
+            <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
+          </TouchableOpacity>
+        ))}
       </ScrollView>
     </SafeAreaView>
   )
@@ -53,7 +57,7 @@ const BookingScreen = () => {
 const RestaurantImage = (props) => (
   <Image
     source={{
-      uri: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1874173.jpg&f=1&nofb=1',
+      uri: props.image,
     }}
     style={{ width: '100%', height: 180 }}
   />
@@ -69,13 +73,15 @@ const RestaurantInfo = (props) => (
     }}
   >
     <View>
-      <Text style={{ fontSize: 15, fontWeight: 'bold', color: "white" }}>Wagamama</Text>
+      <Text style={{ fontSize: 15, fontWeight: 'bold', color: 'white' }}>
+        {props.name}
+      </Text>
       <Text style={{ fontSize: 13, color: 'grey' }}>30-45 • min</Text>
     </View>
-    <View style={{flexDirection: "row", alignItems:"center"}}>
-    <Text style={{color: "white", paddingRight: 5}}>Rating:</Text>
-    <View
-      style={{
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Text style={{ color: 'white', paddingRight: 5 }}>Rating:</Text>
+      <View
+        style={{
           backgroundColor: '#eee',
           height: 30,
           width: 30,
@@ -83,9 +89,9 @@ const RestaurantInfo = (props) => (
           alignItems: 'center',
           borderRadius: 15,
         }}
-        >
-      <Text>4.5</Text>
-        </View>
+      >
+        <Text>{props.rating}</Text>
+      </View>
     </View>
   </View>
 )
