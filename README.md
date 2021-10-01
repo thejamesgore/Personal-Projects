@@ -19,12 +19,12 @@ As I've not been taught react-native but learned react for my second ga-project 
 Has been a great learning experience so far and I have lots more to add progressively overtime.
 
 
-## bin
+## sandbox
 --------
 
-Where projects go to die. I've likely built and trashed 5-10 side projects so far, that were created while working on larger ones, to isolate and understand functinality/concepts I've been learning to a greater degree. They can be considered as testing environments however some have potential to be interesting full blown projects themselves. 
+Where I can experiment with different technologies and implement different featuers before putting into a main project. I've likely built and trashed 5-10 side projects so far, that were created while working on larger ones, to isolate and understand functinality/concepts I've been learning to a greater degree. They can be considered as testing environments however some have potential to be interesting full blown projects themselves. 
 
-All of those that make it to the bin do so as they're incomplete/for testing - and of those that do, some get trashed and lost forever.
+All of those that make it to the sandbox do so as they're incomplete/for testing - and of those that do, some get trashed and not uploaded to github.
 
 The intent is to eventually flesh out the ones that survive as my skills develop over time.
 
