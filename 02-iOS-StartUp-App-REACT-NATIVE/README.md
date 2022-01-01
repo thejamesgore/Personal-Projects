@@ -51,7 +51,7 @@ Homescreen where the user can:
 
 ## Milestones
 Base functionality reached as demonstrated by the video below which if you click takes you to a YouTube high res version
-[![Base App](https://user-images.githubusercontent.com/83005220/132729102-12c47c32-4796-46ca-b52e-0a9d7e90bce1.gif)](https://www.youtube.com/watch?v=0XkzknANB_U "Base App")
+[![Base App](https://user-images.githubusercontent.com/83005220/147848918-5461e5f3-48f0-40be-9158-15ac84d1389e.gif)](https://www.youtube.com/watch?v=0XkzknANB_U "Base App")
 
 ## Learning Points From This Project
 Usefulness of optional chaining when debugging errors
