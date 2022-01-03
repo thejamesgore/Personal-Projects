@@ -1,1 +1,0 @@
-All personal projects working, testing, and experiementing with solidity
