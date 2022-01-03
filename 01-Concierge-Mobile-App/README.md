@@ -1,19 +1,21 @@
-# Luxury Concierge iOS App
+# Concierge Mobile App
 ---
 
-Stretch my knowledge of React & calling Apis to React-Native
+![](https://user-images.githubusercontent.com/83005220/147848918-5461e5f3-48f0-40be-9158-15ac84d1389e.gif)
 
 ## Technologies Used
 
+exponent
 react-native
+react-redux
 react-native-elements
 react-native-maps
 react-native-maps-directions
 react-navigation
-react-redux
 google-autocomplete-api
 google-places-api
 google-distance-matrix-api
+
 ## How To Demo
 
 There are some base requirements needed to demo this build. This was built for iOS so some styling does not work properly on android due to differences in the repspective opereating systems however the issues are purely cosmetic except for one and if you wish to test the app using android or android emulator you can too.
@@ -25,6 +27,7 @@ There are some base requirements needed to demo this build. This was built for i
 3. Click APIs & Services, library, then in search bar enter the google APIs used for this project and add them
 4. Click on the Credentials tab then click create credentials. Follow the instructions and your api key will be generated
 5. In the app root folder create a .env file and on the first line enter GOOGLE_MAPS_APIKEY= followed by your generated API key without spaces or quotations
+
 ### Running the app
 
 1. Install the required packages using `yarn` in the app root folder
@@ -50,8 +53,8 @@ Homescreen where the user can:
 -   Assistant / Live chat
 
 ## Milestones
-Base functionality reached as demonstrated by the video below which if you click takes you to a YouTube high res version
-[![Base App](https://user-images.githubusercontent.com/83005220/147848918-5461e5f3-48f0-40be-9158-15ac84d1389e.gif)](https://www.youtube.com/watch?v=0XkzknANB_U "Base App")
+Base functionality reached as demonstrated by the video below
+https://www.youtube.com/watch?v=0XkzknANB_U
 
 ## Learning Points From This Project
 Usefulness of optional chaining when debugging errors
