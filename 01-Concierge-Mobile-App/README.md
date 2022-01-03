@@ -1,6 +1,8 @@
 # Concierge Mobile App
 ---
 
+A concierge iOS & Android app created with exponent and react-native using the Google Maps & Yelp API.
+
 ![](https://user-images.githubusercontent.com/83005220/147848918-5461e5f3-48f0-40be-9158-15ac84d1389e.gif)
 
 ## Technologies Used
