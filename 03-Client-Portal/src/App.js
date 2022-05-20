@@ -38,7 +38,22 @@ function App() {
           </div>
 
           <div>
-            <Routes></Routes>
+            <Routes>
+              {/* Dashboard */}
+              <Route path="/" element="Ecommerce" />
+              <Route path="/ecommerce" element="Ecommerce" />
+              {/* Pages */}
+              <Route path="/orders" element="Orders" />
+              <Route path="/employees" element="Employees" />
+              <Route path="/customers" element="Customers" />
+              {/* Apps */}
+              <Route path="/kanban" element="Kanban" />
+              <Route path="/editor" element="editor" />
+              <Route path="/calendar" element="Calendar" />
+              <Route path="/color-picker" element="ColorPicker" />
+              {/* Charts */}
+              <Route path="/line" element="Calendar" />
+            </Routes>
           </div>
         </div>
       </BrowserRouter>
