@@ -12,7 +12,7 @@ import {Cart, Chat, Notification, UserProfile} from '.'
 import { useStateContext } from '../context/ContextProvider'
 
 const Navbar = () => {
-  const {activeMenu, setActiveMenu, handleClick} = useStateContext()
+  const {activeMenu, setActiveMenu, handleClick, isClicked, setIsClicked} = useStateContext()
 
   const NavButton = ({title, customFunc, icon, color, dotColor}) => (
     <TooltipComponent content={title} position="BottomCenter">
@@ -61,6 +61,11 @@ const Navbar = () => {
      onClick={() => handleClick('userProfile')}>
 
         <img className="rounded-full w-8 h-8" src={avatar} alt="avatar"/>
+        <p>
+          <span className="text-gray-400 text-14">Hi, </span> {' '}
+          <span className="text-gray-400 font-bold ml-1 text-14">Sami</span>
+        </p>
+        <MdKeyboardArrowDown className="text-gray-400 font-bold ml-1 text-14"/>
      </div>
      </TooltipComponent>
 
