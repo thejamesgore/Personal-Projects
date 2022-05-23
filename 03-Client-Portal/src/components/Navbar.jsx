@@ -12,7 +12,25 @@ import {Cart, Chat, Notification, UserProfile} from '.'
 import { useStateContext } from '../context/ContextProvider'
 
 const Navbar = () => {
-  const {activeMenu, setActiveMenu, handleClick, isClicked, setIsClicked} = useStateContext()
+  const {activeMenu, setActiveMenu, handleClick, isClicked, setIsClicked, screenSize, setScreenSize} = useStateContext()
+
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth)
+
+    window.addEventListener('resize', handleResize)
+
+    handleResize()
+
+    return () => window.removeEventListener('resize', handleResize)
+  },[])
+
+  useEffect(() => {
+    if(screenSize <= 900){
+      setActiveMenu(false)
+    } else {
+      setActiveMenu(true)
+    }
+  },[screenSize])
 
   const NavButton = ({title, customFunc, icon, color, dotColor}) => (
     <TooltipComponent content={title} position="BottomCenter">
