@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { GridComponent, ColumnsDirective, ColumnDirective, Page, Search, Edit, Inject, Toolbar } from '@syncfusion/ej2-react-grids'
-import {employeesData, contextMenuItems, employeesGrid} from '../data/dummy'
+import { GridComponent, ColumnsDirective, ColumnDirective, Page, Search, Inject, Toolbar } from '@syncfusion/ej2-react-grids'
+import {employeesData, employeesGrid} from '../data/dummy'
 import {Header} from '../components'
 
 
