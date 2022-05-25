@@ -12,7 +12,8 @@ const Customers = () => {
         dataSource={customersData}
         allowPaging
         allowSorting
-        toolbar={['Search']}
+        toolbar={['Search','Delete']}
+        editSettings={{allowDeleting: true, allowEditing: true}}
         width="auto"
       >
         <ColumnsDirective >
