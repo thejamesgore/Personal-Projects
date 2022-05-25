@@ -13,6 +13,7 @@ const Orders = () => {
         id='gridcomp'
         dataSource={ordersData}
         allowPaging
+        allowSorting
 
       >
         <ColumnsDirective >
