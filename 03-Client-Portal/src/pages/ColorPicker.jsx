@@ -6,7 +6,33 @@ import { Header } from '../components'
 const ColorPicker = () => {
   return (
 <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="App" title="Color Piker" />ColorPicker</div>
+      <Header category="App" title="Color Piker" />
+      <div classname="text-center">
+        <div id="preview"/>
+        <div className="flex justify-center items-center gap-20 flex-wrap">
+          <div>
+            <p className='text-2xl font-semibold mt-2 mb-4'>Inline Pallete</p>
+            <ColorPickerComponent
+              id="inline-pallete"
+              mode="Palette"
+              modeSwitcher={false}
+              inline
+              showButtons={false}
+            />
+          </div>
+          <div>
+            <p className='text-2xl font-semibold mt-2 mb-4'>Inline Picker</p>
+            <ColorPickerComponent
+              id="inline-pallete"
+              mode="Picker"
+              modeSwitcher={false}
+              inline
+              showButtons={false}
+            />
+          </div>
+        </div>
+      </div>
+      </div>
   )
 }
 
