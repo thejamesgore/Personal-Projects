@@ -25,7 +25,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { useStateContext } from './context/ContextProvider'
 
 function App() {
-  const { activeMenu } = useStateContext()
+  const { activeMenu, ThemeSettings } = useStateContext()
 
   return (
     <div>
@@ -61,7 +61,7 @@ function App() {
             </div>
 
             <div>
-              <ThemeSettings />
+              {ThemeSettings && <ThemeSettings />}
               <Routes>
                 {/* Dashboard */}
                 <Route path="/" element={<Ecommerce />} />
